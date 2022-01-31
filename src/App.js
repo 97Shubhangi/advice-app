@@ -5,7 +5,7 @@ import './App.css';
 
 class App extends React.Component{
 
-    state= { advice: '' };
+    state= { advice: '', };
 
     componentDidMount(){
         this.fetchAdvice();
@@ -21,12 +21,12 @@ class App extends React.Component{
 
         .catch((error)=>{
             console.log(error);
-        })
+        });
     }
 
 
     render(){
-        const {advice}= this.state;
+      const {advice}=this.state;
         return (
             <div className="app">
                 <div className="card">
